@@ -1,8 +1,8 @@
 
 function run(){
     var email=document.getElementById("input").value
-    var x=email
     email=email.toLowerCase()
+    var x=email
     x=x.split("")
     email=email.split("")
     // document.body.append(email)
