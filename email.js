@@ -2,6 +2,7 @@
 function run(){
     var email=document.getElementById("input").value
     var x=email
+    email=email.toLowerCase()
     x=x.split("")
     email=email.split("")
     // document.body.append(email)
