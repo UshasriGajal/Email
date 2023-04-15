@@ -9,7 +9,7 @@ function run(){
     var char=0
     var mail=0
     var normal=0
-    
+    var code=0
     for(var i=0;i<email.length;i++){
         if(email[i]=="@"){
             char++
@@ -21,7 +21,7 @@ function run(){
     if(char==1){
         var index=email.indexOf("@")
         var domain=x.splice(index)
-        x=x.join("")
+        
         domain=domain.join("")
     }
     else{
@@ -33,21 +33,31 @@ function run(){
         mail++
     }
     // console.log(mail)
-    if(email.length<6 || email[0]=="." || email[length-1] ==".")
+    if(email.length<6 || email[0]=="." || email[length-1] =="." || x[x.length-1]==".")
     {
         count++
     }
+    // console.log(count)
+    // for(var i=0;i<=x.length;i++){
+    //     if(x[i]==)
+    // }
+    x=x.join("")
     for(var i=0;i<=x.length;i++){
-        if(x.charCodeAt(i)<122 && x.charCodeAt(i)>96 || x.charCodeAt(i)>48 && x.charCodeAt(i)<57){
+        if(x.charCodeAt(i)<122 && x.charCodeAt(i)>96 || x.charCodeAt(i)>48 && x.charCodeAt(i)<57 || x.charCodeAt(i)==46){
             normal++
+        }
+        if(x.charCodeAt(i)==46){
+            code++
         }
     }
     console.log(normal)
-    if(count==0 && char==1 && mail==1 && normal==x.length){
+    if(count==0 && char==1 && mail==1 && normal==x.length && code==1){
         alert("valid")
     }
     else{
         alert("invalid")
     }
+    // console.log(x)
+    // console.log(domain)
     
 }
