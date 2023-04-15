@@ -51,7 +51,7 @@ function run(){
         }
     }
     console.log(normal)
-    if(count==0 && char==1 && mail==1 && normal==x.length && code==1){
+    if(count==0 && char==1 && mail==1 && normal==x.length && (code==1 || code==0)){
         alert("valid")
     }
     else{
