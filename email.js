@@ -29,7 +29,7 @@ function run(){
     }
     
     // console.log(domain)
-    if(domain=="@gmail.com" || domain=="@yahoo.com" ||  domain== "@mail.com"){
+    if(domain=="@gmail.com" || domain=="@yahoo.com" ||  domain== "@mail.com" || domain=="outlook.com"){
         mail++
     }
     // console.log(mail)
