@@ -43,7 +43,7 @@ function run(){
     // }
     x=x.join("")
     for(var i=0;i<=x.length;i++){
-        if(x.charCodeAt(i)<122 && x.charCodeAt(i)>96 || x.charCodeAt(i)>48 && x.charCodeAt(i)<57 || x.charCodeAt(i)==46){
+        if(x.charCodeAt(i)<123 && x.charCodeAt(i)>96 || x.charCodeAt(i)>47 && x.charCodeAt(i)<58 || x.charCodeAt(i)==46){
             normal++
         }
         if(x.charCodeAt(i)==46){
