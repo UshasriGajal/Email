@@ -5,7 +5,7 @@ function run(){
     var x=email
     x=x.split("")
     email=email.split("")
-    // document.body.append(email)
+
     var count=0
     var char=0
     var mail=0
